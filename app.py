@@ -61,13 +61,6 @@ with st.spinner("Loading model, please wait..."):
 
 chain = get_chain(llm)
 
-with st.sidebar:
-    st.header("Session Summary")
-    summary = chain.memory.moving_summary_buffer
-    if summary:
-        st.write(summary)
-    else:
-        st.info("Summary will appear as you chat.")
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
