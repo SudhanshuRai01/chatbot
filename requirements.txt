@@ -5,3 +5,6 @@ langchain-community
 langchain-huggingface
 huggingface-hub
 python-dotenv
+transformers
+tokenizers
+sentencepiece
