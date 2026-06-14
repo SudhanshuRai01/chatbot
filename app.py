@@ -12,6 +12,7 @@ load_dotenv()
 def load_llm():
     llm=HuggingFaceEndpoint(
         repo_id="google/gemma-3n-E4B-it",
+        huggingfacehub_api_token=st.secrets["HUGGINGFACEHUB_API_TOKEN"],
         max_new_tokens=512,
         temperature=0.7
     )
