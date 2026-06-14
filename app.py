@@ -27,7 +27,7 @@ def get_chain(llm):
             ai_prefix="Assistant"
         )
 
-        template = """You are a friendly assistant. You have a summary of the conversation so far.
+        template = """You are a friendly assistant. You have a summary of the conversation so far,but you donot need to tell it.
 
 {history}
 Human: {input}
